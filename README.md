@@ -8,9 +8,9 @@ which eases the process of compiling, running and testing simple Java programs.
 The easiest way to use jcr is to simply download the script
 and make it executable:
 
-`wget https://git.sr.ht/~erazemkokot/jcr/blob/master/jcr && chmod +x jcr`
+`wget https://github.com/erazemk/jcr/blob/main/jcr && chmod +x jcr`
 
-This will pull the latest jcr release from [Sourcehut](https://sourcehut.org/).
+This will pull the latest jcr release.
 
 Of course you can just use the wget command by itself and make the file
 executable in a file manager.
@@ -31,7 +31,7 @@ To do this first make a `bin` folder in your home directory:
 then download the file to the bin directory as before,
 but this time specify an output file argument as well:
 
-`wget https://git.sr.ht/~erazemkokot/jcr/blob/master/jcr -o ~/bin/jcr`
+`wget https://github.com/erazemk/jcr/blob/main/jcr -o ~/bin/jcr`
 
 finally you can make the script executable:
 
@@ -39,7 +39,7 @@ finally you can make the script executable:
 
 Or in a single command:
 
-`mkdir ~/bin && wget https://git.sr.ht/~erazemkokot/jcr/blob/master/jcr
+`mkdir ~/bin && wget https://github.com/erazemk/jcr/blob/main/jcr
 -o ~/bin/jcr && chmod+x ~/bin/jcr`
 
 This way you can be in any folder and normally execute jcr
@@ -149,15 +149,6 @@ jcr -p 4-7 File.java tests/         (only runs tests 4, 5, 6 and 7)
 jcr -l 10 File.java tests/          (limits each test to 10 seconds)
 jcr -e -t File.java tests/          (shows Java error messages and the time each test took)
 ```
-
-## Contributing
-
-To help improve `jcr` you can send a patch to `(contact [at] erazem [dot] eu)`,
-along with a description of the contribution and optionally your name for
-attribution.
-
-I'm also happy to accept feature requests and bug reports sent to my email
-or submitted on the [bug tracker](https://todo.sr.ht/~erazemkokot/jcr).
 
 ## License
 
